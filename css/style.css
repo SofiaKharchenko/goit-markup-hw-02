@@ -1,3 +1,15 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+  --white-text-op06: rgba(255, 255, 255, 0.6);
+  --black-text: rgba(33, 33, 33, 1);
+  --grey-text: rgba(117, 117, 117, 1);
+  --blue-text: rgba(33, 150, 243, 1);
+
+  --white-background: rgba(236, 236, 236, 1);
+  --grey-background: rgba(47, 48, 58, 1);
+  --light-grey-background: rgba(245, 244, 250, 1);
+}
+.menu-link-current,
 .web {
   color: var(--blue-text);
 }
@@ -15,13 +27,16 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 .header {
   background-color: white;
 }
-
-.header a {
+.menu-link {
   color: var(--black-text);
 }
+/* .header a {
+  color: var(--black-text);
+} */
 
 .navigation {
   font-weight: 500;
@@ -38,7 +53,6 @@ body {
 
 .nav-contacts a {
   color: var(--grey-text);
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -50,17 +64,13 @@ body {
   color: var(--blue-text);
 }
 .hero {
-  font-family: 'Roboto', sans-serif;
   color: var(--white-text);
   background-color: var(--grey-background);
-  /* height: 600px; */
 }
 .title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   width: 696px;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 60px;
@@ -68,12 +78,11 @@ body {
 .title-button {
   background-color: var(--blue-text);
   border: var(--blue-text);
-  font-style: normal;
   color: var(--white-text);
   width: 200px;
   height: 50px;
   font-size: 16 px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .visually-hidden {
   position: absolute;
@@ -85,36 +94,29 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.list {
-  font-family: Roboto;
-  font-style: normal;
-}
+
 .title-benefits {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .subtext-benefits {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
 .section-soulless {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: var(--black-text);
 }
 .team {
-  font-family: Roboto;
-  font-style: normal;
   background-color: var(--light-grey-background);
 }
 .title-team {
@@ -125,19 +127,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--black-text);
 }
-.name-team {
-  font-weight: 500;
+.name-team,
+.profession-team {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
+}
+.name-team {
+  font-weight: 500;
   color: var(--black-text);
 }
 .profession-team {
   color: var(--grey-text);
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 .footer {
@@ -148,19 +150,19 @@ body {
   color: var(--white-text);
 }
 
-.address {
-  color: var(--white-text);
-  font-weight: 400;
+.address,
+.contact-footer a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+.address {
+  color: var(--white-text);
+  font-weight: 400;
+}
 .contact-footer a {
   color: var(--white-text-op06);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 .contact-footer .active,
 .contact-footer a:hover,
@@ -175,7 +177,6 @@ body {
   background-color: var(--blue-text);
 }
 .portfolio-button {
-  font-family: 'Roboto', sans-serif;
   font-style: Medium;
   font-size: 16px;
   color: var(--black-text);
@@ -185,9 +186,7 @@ body {
   line-height: 1.62;
   letter-spacing: 00.03em;
 }
-
 .portfolio-title {
-  font-family: 'Roboto', sans-serif;
   color: var(--black-text);
   font-weight: 700;
   font-size: 18px;
@@ -195,7 +194,6 @@ body {
   letter-spacing: 0.06em;
 }
 .portfolio-subtitle {
-  font-family: 'Roboto', sans-serif;
   color: var(--grey-text);
   font-weight: 400;
   font-size: 16px;
